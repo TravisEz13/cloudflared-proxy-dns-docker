@@ -35,4 +35,4 @@ ENV LOCAL_PORT     53
 EXPOSE $LOCAL_PORT/tcp
 EXPOSE $LOCAL_PORT/udp
 
-CMD  cloudflared proxy-dns --port $LOCAL_PORT
+CMD  cloudflared proxy-dns --port $LOCAL_PORT --address 0.0.0.0
