@@ -23,6 +23,7 @@ EXPOSE $LOCAL_PORT/tcp $LOCAL_PORT/udp
 CMD  cloudflared proxy-dns --port $LOCAL_PORT --address 0.0.0.0
 
 ARG VCS_REF
+ARG BUILD_DATE
 
 LABEL maintainer="Travis Plunk <github@ez13.net>" \
       readme.md="https://github.com/travisez13/cloudflared-proxy-dns-docker/blob/master/README.md" \
