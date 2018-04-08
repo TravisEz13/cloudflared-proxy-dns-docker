@@ -2,8 +2,15 @@
 echo "in build hook"
 env
 echo "getting context path"
-CONTEXTFOLDER=$(dirname $DOCKERFILE_PATH)
+if [ -z ${DOCKERFILE_PATH+x} ]; then
+  CFDOCKERFILE_PATH=$BUILD_PATH
+else
+  CFDOCKERFILE_PATH=$DOCKERFILE_PATH
+fi
+
+echo "CFDOCKERFILE_PATH = $CFDOCKERFILE_PATH"
+CONTEXTFOLDER=$(dirname $CFDOCKERFILE_PATH)
 echo "starting buid"
 docker build --build-arg VCS_REF=`git rev-parse --short HEAD` \
   --build-arg BUILD_DATE=`date -u +”%Y-%m-%dT%H:%M:%SZ”` \
--f $DOCKERFILE_PATH -t $IMAGE_NAME $CONTEXTFOLDER
+-f $CFDOCKERFILE_PATH -t $IMAGE_NAME $CONTEXTFOLDER
