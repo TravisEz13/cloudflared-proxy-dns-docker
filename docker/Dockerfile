@@ -33,5 +33,6 @@ COPY config.yml /usr/local/etc/cloudflared/config.yaml
 ENV LOCAL_PORT     53
 
 EXPOSE $LOCAL_PORT/tcp
+EXPOSE $LOCAL_PORT/udp
 
 CMD  cloudflared proxy-dns --port $LOCAL_PORT
