@@ -7,7 +7,7 @@ A container to run a proxy DNS server to CloudFlare's DNS over HTTPs service.
 ## To run the service
 
 ```
-docker run -p 53:53 travisez13/cloudflared-proxy-dns
+docker run -p 53:53/tcp -p 53:53/udp travisez13/cloudflared-proxy-dns
 ```
 
 ## Images
