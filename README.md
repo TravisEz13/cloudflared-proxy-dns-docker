@@ -19,8 +19,8 @@ docker run -p 53:53/tcp -p 53:53/udp travisez13/cloudflared-proxy-dns
 
 ### Latest Edge Image
 
-[![](https://images.microbadger.com/badges/image/travisez13/cloudflared-proxy-dns:edge.svg)](https://microbadger.com/images/travisez13/cloudflared-proxy-dns:release-v1.0-preview.1.2 "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/travisez13/cloudflared-proxy-dns:edge.svg)](https://microbadger.com/images/travisez13/cloudflared-proxy-dns:release-v1.0-preview.1.2 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/travisez13/cloudflared-proxy-dns:edge.svg)](https://microbadger.com/images/travisez13/cloudflared-proxy-dns:edge "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/travisez13/cloudflared-proxy-dns:edge.svg)](https://microbadger.com/images/travisez13/cloudflared-proxy-dns:edge "Get your own version badge on microbadger.com")
 
 ## References
 
